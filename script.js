@@ -13,22 +13,18 @@
 
 console.log(`---exercise 1.1:- Bill calculater---`);
 
-const billAmount = 275.5;
-const people = 4;
-const tipPercentage = 0.15;
+const billAmount = 275.5,
+  people = 4,
+  tipPercentage = 0.15;
 
-const tipAmount = billAmount * tipPercentage;
-const totalAmount = billAmount + tipAmount;
+const tipAmount = (billAmount * tipPercentage).toFixed(2);
+const totalAmount = (billAmount + Number(tipAmount)).toFixed(2);
+const amountPerPerson = (totalAmount / people).toFixed(2);
 
-const amountPerPerson = totalAmount / people;
-
-const tip = totalAmount - billAmount;
-
-console.log(`Bill: ${billAmount}`);
-console.log(`Tip(15%):${tip}`);
+console.log(`Bill: ${billAmount.toFixed(2)}`);
+console.log(`Tip(15%):${tipAmount}`);
 console.log(`Total:${totalAmount}`);
 console.log(`Per Person:${amountPerPerson}`);
-
 console.log(`---exercise 1.2:- grade checker---`);
 
 //Write a program that takes a student's marks and tells them their grade.
@@ -83,16 +79,17 @@ for (let i = 0; i < marks.length; i++) {
 
 console.log('---exercise 1.3:- FizzBuzz--- ');
 
-for (let i = 0; i <= 50; i++)
-  if (i % 3 == 0) {
-    console.log('Fizz');
-  } else if (i % 5 == 0) {
-    console.log('Buzz');
-  } else if (i % 3 == 0 && i % 5 == 0) {
+for (let i = 1; i <= 50; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
     console.log('FizzBuzz');
+  } else if (i % 3 === 0) {
+    console.log('Fizz');
+  } else if (i % 5 === 0) {
+    console.log('Buzz');
   } else {
     console.log(i);
   }
+}
 
 console.log('---exercise 1.4:- Shoping cart---');
 // Do these tasks (one at a time, log results):
@@ -120,10 +117,16 @@ if (cart.includes('keyboard')) {
 } else {
   console.log(`5.keyboard is not there`);
 }
-const index = cart.indexOf('mouse');
-console.log(`6.position of mouse is ` + index);
-cart.slice('moniter');
-console.log(`7.cart after removing moniter  ` + cart);
+const positioonMouse = cart.indexOf('mouse');
+console.log(`6.position of mouse is ` + positioonMouse);
+
+const index = cart.indexOf('monitor');
+
+if (index !== -1) {
+  cart.splice(index, 1);
+}
+
+console.log(cart);
 
 console.log(`---exercise 1.5:-object practice---`);
 // Create an object for a movie with:
