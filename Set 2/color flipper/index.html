@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color Flipper</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 16px;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="colorCode">#FFFFFF</h1>
+
+    <button id="randomBtn">Change To Random Hex Color</button>
+    <button id="simpleBtn">Simple To Colors</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

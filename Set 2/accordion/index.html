@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ Section</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 40px;
+      }
+
+      .faq {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .faq-item {
+        border-bottom: 1px solid #ddd;
+      }
+
+      .faq-question {
+        padding: 15px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      .arrow {
+        transition: transform 0.3s ease;
+      }
+
+      .faq-item.active .arrow {
+        transform: rotate(90deg);
+      }
+
+      .faq-answer {
+        padding: 0 20px 15px;
+        display: none;
+        color: #555;
+      }
+
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">
+          What is JavaScript?
+          <span class="arrow">▶</span>
+        </div>
+        <div class="faq-answer">
+          JavaScript is a programming language used to make web pages
+          interactive.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What are the primitive data types available in JavaScript?
+          <span class="arrow">▶</span>
+        </div>
+        <div class="faq-answer">
+          Primitive types include String, Number, Boolean, Undefined, Null,
+          Symbol, and BigInt
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What is DOM manipulation?
+          <span class="arrow">▶</span>
+        </div>
+        <div class="faq-answer">
+          DOM manipulation in JavaScript is the process of using the Document
+          Object Model (DOM) API to dynamically interact with and modify the
+          content, structure, and style of a web page after it has loaded.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          For what javascript is used
+          <span class="arrow">▶</span>
+        </div>
+        <div class="faq-answer">
+          javascript is use to create dynamically updating content, control
+          multimedia, animate images, and implement complex features across
+          various platforms
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
