@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Map Pins App</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        display: flex;
+      }
+
+      #map {
+        height: 100vh;
+        width: 70%;
+      }
+
+      .sidebar {
+        width: 30%;
+        padding: 15px;
+        border-left: 1px solid #ddd;
+        overflow-y: auto;
+      }
+
+      .pin {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        padding: 6px;
+        background: #f5f5f5;
+        border-radius: 4px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="sidebar">
+      <h3>Your Location</h3>
+      <p id="coords">Loading...</p>
+
+      <h3>Dropped Pins</h3>
+      <div id="pinList"></div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

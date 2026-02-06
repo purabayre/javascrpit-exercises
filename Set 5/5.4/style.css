@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+}
+
+.inputs input {
+  width: 70px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#display {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background: #00ffcc;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+}

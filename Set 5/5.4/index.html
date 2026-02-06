@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer-container">
+      <h1>Countdown Timer</h1>
+
+      <div class="inputs">
+        <input type="number" id="hours" placeholder="HH" min="0" />
+        <input type="number" id="minutes" placeholder="MM" min="0" max="59" />
+        <input type="number" id="seconds" placeholder="SS" min="0" max="59" />
+      </div>
+
+      <div id="display">00:00:00</div>
+
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <audio id="alarm">
+        <source
+          src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+          type="audio/ogg"
+        />
+      </audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
